@@ -2,5 +2,9 @@
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#F54133",
     "titleBar.inactiveBackground": "#F54133"
-  }
+  },
+"indentRainbow.includedLanguages": [],
+"emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+}
 }
