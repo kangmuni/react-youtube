@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 0.3em;
+  font-family: 'Antonio', sans-serif;
+}
+
+.img {
+  width: 2em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 40em;
+  height: 2em;
+  outline: none;
+  font-size: 1em;
+}
+
+.img_search {
+  width: 1.8em;
+  cursor: pointer;
+}
+
+.icons {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin-right: 2em;
+}
+
+.icons button {
+  background-color: white;
+  color: rgb(73, 73, 73);
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 1.3em;
+}

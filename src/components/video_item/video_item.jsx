@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './video_item.module.css';
 
-const VideoItem = ({ video: { snippet } }) => (
+const VideoItem = (
+  { video: { snippet } } // props.video.snippet.thubnails.medium.url
+) => (
   <li className={styles.video}>
     <img src={snippet.thumbnails.medium.url} />
     <div className={styles.metadata}>
