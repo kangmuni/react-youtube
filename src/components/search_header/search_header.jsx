@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
 
-const SearchHeader = ({ onSearch }) => {
+const SearchHeader = memo(({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -18,6 +18,7 @@ const SearchHeader = ({ onSearch }) => {
       handleSearch();
     }
   };
+  console.log('header'); // 메모를 써도 콜백함수 때문에 props이 계속 바뀌어 리렌더가 계속 발생하고 있음
 
   return (
     <header className={styles.header}>
@@ -60,6 +61,6 @@ const SearchHeader = ({ onSearch }) => {
       </ul>
     </header>
   );
-};
+});
 
 export default SearchHeader;

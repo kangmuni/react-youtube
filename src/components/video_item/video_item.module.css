@@ -1,6 +1,15 @@
-.video {
-  width: 320px;
+.container {
   margin: 0.8em;
+  width: 320px;
+  cursor: pointer;
+}
+
+.container :hover {
+  transform: scale(1);
+}
+
+.video.gird {
+  display: flex;
 }
 
 .metadata {
@@ -19,6 +28,9 @@
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.title.grid {
 }
 
 .channel {
