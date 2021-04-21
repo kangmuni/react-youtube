@@ -16,9 +16,15 @@ const VideoDetail = ({ video, video: { snippet } }) => (
     <div className={styles.titleAndBtn}>
       <h3 className={styles.title}>{snippet.title}</h3>
       <div className={styles.button}>
-        <i className="fas fa-thumbs-up"></i>
-        <i className="fas fa-thumbs-down"></i>
-        <i className="fas fa-share"></i>
+        <button>
+          <i className="fas fa-thumbs-up"></i>
+        </button>
+        <button>
+          <i className="fas fa-thumbs-down"></i>
+        </button>
+        <button>
+          <i className="fas fa-share"></i>
+        </button>
       </div>
     </div>
     <div className={styles.channelTitle}>{snippet.channelTitle}</div>

@@ -7,6 +7,7 @@ const SearchHeader = memo(({ onSearch }) => {
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
+    inputRef.current.value = '';
   };
 
   const onClick = () => {
@@ -42,23 +43,17 @@ const SearchHeader = memo(({ onSearch }) => {
           />
         </button>
       </div>
-      <ul className={styles.icons}>
-        <li>
-          <button>
-            <i className="fas fa-video"></i>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i className="fas fa-bell"></i>
-          </button>
-        </li>
-        <li>
-          <button>
-            <i className="fas fa-id-badge"></i>
-          </button>
-        </li>
-      </ul>
+      <div className={styles.icons}>
+        <button>
+          <i className="fas fa-video"></i>
+        </button>
+        <button>
+          <i className="fas fa-bell"></i>
+        </button>
+        <button>
+          <i className="fas fa-id-badge"></i>
+        </button>
+      </div>
     </header>
   );
 });

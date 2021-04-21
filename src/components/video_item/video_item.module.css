@@ -2,18 +2,29 @@
   margin: 0.8em;
   width: 320px;
   cursor: pointer;
+  transition: transform 100ms ease-out;
 }
 
-.container :hover {
-  transform: scale(1);
+.container:hover {
+  transform: scale(1.05);
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
 }
 
 .video.gird {
   display: flex;
+  flex-direction: row;
+}
+
+.metadata.grid {
+  margin-left: 5rem;
 }
 
 .metadata {
-  margin-left: 0.4rem;
+  margin-top: 0.5em;
 }
 
 .title,
@@ -30,9 +41,9 @@
   text-overflow: ellipsis;
 }
 
-.title.grid {
-}
-
 .channel {
+  margin-top: 0.5em;
   font-size: 0.9rem;
+  color: rgb(98, 98, 98);
+  font-weight: 500;
 }
