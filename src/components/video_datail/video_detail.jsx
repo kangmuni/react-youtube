@@ -28,7 +28,7 @@ const VideoDetail = ({ video, video: { snippet } }) => (
       </div>
     </div>
     <div className={styles.channelTitle}>{snippet.channelTitle}</div>
-    <pre className={styles.description}>{snippet.description}</pre>
+    <div className={styles.description}>{snippet.description}</div>
   </section>
 );
 

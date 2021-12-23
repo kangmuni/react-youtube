@@ -20,7 +20,7 @@ class YoutubeFetch {
 
   async mostPopular() {
     const response = await fetch(
-      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=25&key=${this.key}`,
+      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=40&key=${this.key}`,
       this.requestOptions
     );
     const result = await response.json();
@@ -40,7 +40,7 @@ class YoutubeFetch {
 
   async search(query) {
     const response = await fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&type=video&key=${this.key}`,
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=${query}&type=video&key=${this.key}`,
       this.requestOptions
     );
     const result = await response.json();
@@ -48,4 +48,4 @@ class YoutubeFetch {
   }
 }
 
-export default YoutubeFetch;
+export default Youtube;

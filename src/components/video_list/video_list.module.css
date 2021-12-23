@@ -1,8 +1,13 @@
 .videos {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  padding-left: 0;
   justify-content: center;
+  list-style: none;
   margin: 0;
+  padding-left: 0;
+}
+
+.videos.grid {
+  margin-top: 0.85em;
+  justify-content: flex-start;
 }

@@ -1,8 +1,8 @@
 .container {
-  margin: 0.8em;
+  margin: 0.4em;
   width: 320px;
   cursor: pointer;
-  transition: transform 100ms ease-out;
+  transition: transform 200ms ease-out;
 }
 
 .container:hover {
@@ -14,17 +14,21 @@
   flex-direction: column;
 }
 
-.video.gird {
-  display: flex;
+.video.grid {
   flex-direction: row;
+  width: 25vw;
 }
 
-.metadata.grid {
-  margin-left: 5rem;
+.image.grid {
+  width: 12vw;
 }
 
 .metadata {
   margin-top: 0.5em;
+}
+
+.metadata.grid {
+  margin-left: 10px;
 }
 
 .title,

@@ -19,6 +19,7 @@ const SearchHeader = memo(({ onSearch }) => {
       handleSearch();
     }
   };
+
   console.log('header'); // 메모를 써도 콜백함수 때문에 props이 계속 바뀌어 리렌더가 계속 발생하고 있음
 
   return (
@@ -51,7 +52,7 @@ const SearchHeader = memo(({ onSearch }) => {
           <i className="fas fa-bell"></i>
         </button>
         <button>
-          <i className="fas fa-id-badge"></i>
+          <i class="fas fa-user-circle"></i>
         </button>
       </div>
     </header>

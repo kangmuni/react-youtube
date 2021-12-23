@@ -1,6 +1,8 @@
 .body {
+  display: flex;
+  justify-content: center;
   background-color: rgb(249, 249, 249);
-  padding: 1rem 0;
+  padding: 1em 5em;
 }
 
 .content {
